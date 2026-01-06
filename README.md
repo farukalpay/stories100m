@@ -65,7 +65,7 @@ The full technical report is available in `paper/main.pdf`. It covers:
 *   **Computational Linguistics**: Impact of latency on Beam Search and Contrastive Decoding.
 *   **Implementation Challenges**: Debugging Weight Tying and NEON numerical stability.
 
-### Citation
+### Citation (!Pending ArXiv DOI)
 ```bibtex
 @article{baremetal2024,
   title={Bare-Metal Tensor Virtualization: Overcoming the Memory Wall in Edge-AI Inference},
