@@ -67,11 +67,14 @@ The full technical report is available in `paper/main.pdf`. It covers:
 
 ### Citation (!Pending ArXiv DOI)
 ```bibtex
-@article{baremetal2024,
-  title={Bare-Metal Tensor Virtualization: Overcoming the Memory Wall in Edge-AI Inference},
-  author={Kilictas, Bugra and Alpay, Faruk},
-  journal={Bahcesehir University Research},
-  year={2026}
+@misc{kilictas2026baremetal,
+      title={Bare-Metal Tensor Virtualization: Overcoming the Memory Wall in Edge-AI Inference on ARM64}, 
+      author={Bugra Kilictas and Faruk Alpay},
+      year={2026},
+      eprint={arXiv:XXXX.XXXXX},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/XXXX.XXXXX}
 }
 ```
 
