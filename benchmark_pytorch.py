@@ -58,11 +58,6 @@ def main():
     print("[*] Running Benchmark (N=256 steps)...")
     latencies = []
     
-    # Simulate autoregressive generation (append 1 token at a time)
-    # We cheat slightly by not actually appending to keep context small (as in C++ bench which is mostly compute bound on weights)
-    # But strictly, C++ bench generates 256 tokens.
-    # To be accurate to C++ bench (which processes 1 token at a time after prompt), we run batch=1, seq_len=seq.
-    
     # The C++ bench does: forward(token, pos). It processes 1 token.
     # So we should benchmark 1->1 forward pass.
     
