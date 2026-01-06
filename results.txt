@@ -1,0 +1,12 @@
+=============================================
+  Stories 100M Semantic Search (ARM64/NEON) 
+=============================================
+[*] Generating 100M Mock Embeddings & Index... Done.
+[*] Setup Time: 9.557 s
+[*] Running Benchmark (1000 iterations)...
+---------------------------------------------
+Total Time: 14 ms
+Latency:    0.014 ms / query
+Throughput: 66666 QPS
+Checksum:   899000
+[PASS] Latency < 10ms
