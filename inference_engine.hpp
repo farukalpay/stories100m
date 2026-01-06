@@ -232,23 +232,9 @@ public:
         
         weights.rms_final_weight = next(dim);
         
-        // Skip freq_cis_real/imag (RoPE tables) usually stored here in llama2.c bin
-        // They are seq_len * head_size / 2
-        // We will calc them on fly or skip strict ptr mapping if we don't need them pre-calc'd
-        // For simplicity, we assume they are there:
         int head_size_val = config.dim / config.n_heads;
         weights_ptr += config.seq_len * head_size_val / 2; // real
         weights_ptr += config.seq_len * head_size_val / 2; // imag
-
-        // shared weights logic would go here, but for now map wcls if present
-        // In some versions wcls is absent if tied? 
-        // We act as if it is present if we haven't hit EOF.
-        // But for stories100m.bin usually output head is NOT tied or is stored?
-        // Let's assume there is a wcls at end?
-        // In Karpathy's code: if (shared_classifier) wcls = token_embedding_table else ...
-        // We'll trust the offset for now or check file size.
-        // For benchmarks, let's assume we read it or point to it.
-        // Optimization: just use token_embedding_table if we run out of bytes?
         
         // Check for Shared Classifier (Weight Tying)
         size_t bytes_remaining = file_size - ((char*)weights_ptr - (char*)data);
