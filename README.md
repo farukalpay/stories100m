@@ -65,7 +65,7 @@ The full technical report is available [on ArXiv (PDF)](https://arxiv.org/pdf/26
 *   **Computational Linguistics**: Impact of latency on Beam Search and Contrastive Decoding.
 *   **Implementation Challenges**: Debugging Weight Tying and NEON numerical stability.
 
-### Citation (!Pending ArXiv DOI)
+### Citation
 ```bibtex
 @misc{kilictas2026baremetal,
       title={Bare-Metal Tensor Virtualization: Overcoming the Memory Wall in Edge-AI Inference on ARM64}, 
