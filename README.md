@@ -60,7 +60,7 @@ Or manually:
 ```
 
 ## Research Paper
-The full technical report is available in `paper/main.pdf`. It covers:
+The full technical report is available [on ArXiv (PDF)](https://arxiv.org/pdf/2601.03324). It covers:
 *   **Roofline Analysis**: Why CPU inference is 93% memory-bound.
 *   **Computational Linguistics**: Impact of latency on Beam Search and Contrastive Decoding.
 *   **Implementation Challenges**: Debugging Weight Tying and NEON numerical stability.
@@ -71,10 +71,10 @@ The full technical report is available in `paper/main.pdf`. It covers:
       title={Bare-Metal Tensor Virtualization: Overcoming the Memory Wall in Edge-AI Inference on ARM64}, 
       author={Bugra Kilictas and Faruk Alpay},
       year={2026},
-      eprint={arXiv:XXXX.XXXXX},
+      eprint={arXiv:2601.03324},
       archivePrefix={arXiv},
       primaryClass={cs.CL},
-      url={https://arxiv.org/abs/XXXX.XXXXX}
+      url={https://arxiv.org/abs/2601.03324}
 }
 ```
 
